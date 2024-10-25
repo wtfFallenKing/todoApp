@@ -1,0 +1,65 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/app/i/timer/rounds/PomodoroRounds.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PomodoroRounds_container__nlyWu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem
+}
+
+.PomodoroRounds_roundsContainer__2mFu1 {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem
+}
+
+.PomodoroRounds_button__XiB_f {
+  margin-top: 0.25rem;
+  opacity: 0.2;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 266ms
+}
+
+.PomodoroRounds_button__XiB_f:hover {
+  opacity: 1
+}
+
+.PomodoroRounds_button__XiB_f:disabled {
+  opacity: 0.2
+}
+
+.PomodoroRounds_round__gHW2P {
+  position: relative;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgba(255,255,255,.12)
+}
+.PomodoroRounds_round__gHW2P::before {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 81 255 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%
+}
+.PomodoroRounds_round__gHW2P.PomodoroRounds_active__taE9Y::before {
+  transition-duration: 1000ms;
+  width: 40%
+}
+.PomodoroRounds_round__gHW2P.PomodoroRounds_completed__k0S4z::before {
+  border-radius: 0.25rem;
+  width: 100%
+}
