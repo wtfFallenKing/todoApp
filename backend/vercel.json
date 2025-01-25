@@ -1,5 +1,11 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "src/main.ts",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
@@ -11,11 +17,5 @@
         "DELETE"
       ]
     }
-  ],
-  "functions": {
-    "src/main.ts": {
-        "runtime": "vercel/node@20.16.0",
-        "maxDuration": 30
-    }
-  }
+  ]
 }
