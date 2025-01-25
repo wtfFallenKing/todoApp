@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/artemkaaaa/projects/todoApp/frontend/todo-frontend/src/app/layout\":[\"static/media/9d9319a7a2ac39c6-s.p.woff2\",\"static/media/0e790e04fd40ad16-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
