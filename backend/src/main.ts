@@ -9,9 +9,8 @@ async function bootstrap() {
   app.use(cookieParser());
   app.enableCors({
     origin: 'https://todo-app-eozm.vercel.app',
-    allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
-    exposedHeaders: 'set-cookie',
   });
 
   await app.listen(4200);
