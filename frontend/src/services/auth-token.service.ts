@@ -13,7 +13,7 @@ export const getAccessToken = () => {
 
 export const saveTokenStorage = (accessToken: string) => {
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
-		domain: 'todo-app-nine-psi-59.vercel.app',
+		domain: 'todo-app-eozm.vercel.app',
 		sameSite: 'strict',
 		expires: 1
 	})
