@@ -100,8 +100,7 @@ export class AuthService {
       httpOnly: true,
       domain: 'todo-app-eozm.vercel.app',
       expires: expiresIn,
-      secure: true,
-      sameSite: 'none',
+      sameSite: 'strict',
     });
   }
 
@@ -110,8 +109,7 @@ export class AuthService {
       httpOnly: true,
       domain: 'todo-app-eozm.vercel.app',
       expires: new Date(0),
-      secure: true,
-      sameSite: 'none',
+      sameSite: 'strict',
     });
   }
 }
