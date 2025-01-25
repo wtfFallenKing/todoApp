@@ -17,5 +17,11 @@
         "DELETE"
       ]
     }
-  ]
+  ],
+  "functions": {
+    "src/main.ts": {
+        "runtime": "@vercel/node",
+        "maxDuration": 30
+    }
+  }
 }
