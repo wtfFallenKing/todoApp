@@ -1,4 +1,5 @@
-import Cookies from '../../node_modules/@types/js-cookie'
+// import Cookies from '../../node_modules/@types/js-cookie'
+import Cookies from 'js-cookie'
 
 export enum EnumTokens {
 	'ACCESS_TOKEN' = 'accessToken',
@@ -12,7 +13,7 @@ export const getAccessToken = () => {
 
 export const saveTokenStorage = (accessToken: string) => {
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
-		domain: 'localhost',
+		domain: 'todo-app-nine-psi-59.vercel.app',
 		sameSite: 'strict',
 		expires: 1
 	})
