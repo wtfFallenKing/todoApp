@@ -8,8 +8,8 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.use(cookieParser());
   app.enableCors({
-    origin: 'https://todo-app-eozm.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    origin: ['*'],
+    methods: ['*'],
     credentials: true,
   });
 
