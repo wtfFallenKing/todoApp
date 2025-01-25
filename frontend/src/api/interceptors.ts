@@ -8,7 +8,7 @@ import {
 import { authService } from '@/services/auth.service'
 
 const options: CreateAxiosDefaults = {
-	baseURL: 'http://localhost:4200/api',
+	baseURL: 'https://todo-app-nine-psi-59.vercel.app',
 	headers: {
 		'Content-Type': 'application/json'
 	},
