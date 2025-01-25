@@ -8,7 +8,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.use(cookieParser());
   app.enableCors({
-    origin: ['https://todo-app-nine-psi-59.vercel.app'],
+    origin: ['https://todo-app-nine-psi-59.vercel.app', 'https://vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   });
