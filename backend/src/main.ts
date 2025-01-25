@@ -7,7 +7,12 @@ async function bootstrap() {
 
   app.setGlobalPrefix('api');
   app.use(cookieParser());
-  app.enableCors();
+  app.enableCors({
+    origin: 'https://todo-app-eozm.vercel.app',
+    allowedHeaders: ['Content-Type', 'Authorization', 'Cookie'],
+    credentials: true,
+    exposedHeaders: 'set-cookie',
+  });
 
   await app.listen(4200);
 }
